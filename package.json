@@ -3,6 +3,9 @@
 	"displayName": "idTech Shader Syntax",
 	"description": "Syntax Highlighting for files like `shader` from Quake 3 for example",
 	"version": "0.0.1",
+	"repository": {
+		"url": "https://github.com/mjuksel/vscode-q3shader"
+	},
 	"engines": {
 		"vscode": "^1.72.0"
 	},
