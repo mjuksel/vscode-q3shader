@@ -1,0 +1,77 @@
+{
+	"fileTypes": [
+		".shader",
+		".shaderx",
+		".map",
+		".aas",
+		".mtr",
+		".mtt",
+		".fx",
+		".cm",
+		".sndshd",
+		".md5anim",
+		".md5mesh",
+		".scriptcfg",
+		".conf",
+		".gui",
+		".def",
+		".script",
+		".lipsync",
+		".guide",
+		".af",
+		".efx",
+		".phys",
+		".psys",
+		".lfs",
+		".grfx"
+	],
+	"name": "q3shader",
+	"scopeName": "source.q3shader",
+	"patterns": [
+		{
+			"comment": "Comments",
+			"match": "(\\s*//.*)",
+			"name": "comment.q3shader"
+		},
+		{
+			"comment": "Waveforms",
+			"match": "(?i)\\b(sin|square|triangle|sawtooth|inversesawtooth|noise)\\b",
+			"name": "string.q3shader"
+		},
+		{
+			"comment": "ShaderName",
+			"match": "(?i)(^[\\w\\/]+)\\b",
+			"name": "storage.type.function.q3shader"
+		},
+		{
+			"comment": "Paths",
+			"match": "(?i)(\\w*\\/[\\S.]*)",
+			"name": "string.q3shader"
+		},
+		{
+			"comment": "Brackets",
+			"match": "(?i)\\b(\\]|\\[|\\(|\\)|\\{|\\})\\b",
+			"name": "punctuation.q3shader"
+		},
+		{
+			"comment": "Numbers",
+			"match": "(?i)\\b(?<!\\w)(-)*(\\d+)*(\\.)*(\\d+)(?!\\w)\\b",
+			"name": "constant.numeric.q3shader"
+		},
+		{
+			"comment": "$lightmap, $whiteimage, *white...",
+			"match": "(?i)([*$]\\w*|GL_.*)",
+			"name": "variable.other.q3shader"
+		},
+		{
+			"comment": "Funcs",
+			"match": "(?i)^\\s+(\\S{2,})",
+			"name": "entity.name.function.q3shader"
+		},
+		{
+			"comment": "Param",
+			"match": "(?i)\\b(?:(\\w)*\\S)\\b",
+			"name": "keyword.q3shader"
+		}
+	]
+}

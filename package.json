@@ -1,0 +1,57 @@
+{
+	"name": "vscode-q3shader",
+	"displayName": "idTech Shader Syntax",
+	"description": "Syntax Highlighting for files like `shader` from Quake 3 for example",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.72.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "q3shader",
+				"aliases": [
+					"idTech Syntax",
+					"q3shader"
+				],
+				"extensions": [
+					".shader",
+					".shaderx",
+					".map",
+					".aas",
+					".mtr",
+					".mtt",
+					".fx",
+					".cm",
+					".sndshd",
+					".md5anim",
+					".md5mesh",
+					".scriptcfg",
+					".conf",
+					".gui",
+					".def",
+					".script",
+					".lipsync",
+					".guide",
+					".af",
+					".efx",
+					".phys",
+					".psys",
+					".lfs",
+					".grfx"
+				],
+				"configuration": "./q3shader-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "q3shader",
+				"scopeName": "source.q3shader",
+				"path": "./syntaxes/q3shader.tmLanguage.json"
+			}
+		]
+	}
+}
